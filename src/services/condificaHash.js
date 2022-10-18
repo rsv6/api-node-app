@@ -12,16 +12,17 @@ export const comparaHash = async (senhaNova, senhaAntiga) => {
 }
 
 // Metodo synchronous:
-const senhaHash = await geraHash("svieiRa@81915262");
-const result = await compare("svieiRa@81915262", senhaHash);
+// const senhaHash = await geraHash("svieiRa@81915262");
+// console.log(senhaHash);
+// const result = await compare("svieiRa@81915262", senhaHash);
 
-console.log("Resultado: ", result);
+// console.log("Resultado: ", result);
 
-if (result) {
-  console.log("Senhas são iguais!");
-} else {
-  console.log("Senha não são iguais!!");
-}
+// if (result) {
+//   console.log("Senhas são iguais!");
+// } else {
+//   console.log("Senha não são iguais!!");
+// }
 
 
 // Metodo Asynchronous:

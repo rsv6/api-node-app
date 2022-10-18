@@ -7,7 +7,7 @@ import { Setup } from './Setup.js';
 export class App {
   app;  
   express;
-  routes;
+  routes = new Routes();
   #port;
 
   init() {

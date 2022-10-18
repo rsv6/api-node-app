@@ -1,7 +1,6 @@
 const { PORT, KEY_SECRET } = process.env;
 
 
-// console.log("PORT: ", PORT);
 
 export class Setup {
   #port;
