@@ -19,6 +19,7 @@ export class UsuarioController {
 
     return (req, res) => {
       const { login } = req.body;
+      
       this.token = this.jwt.toAsign(login, Date());
       
       res.status(200).json({ "token": this.token});

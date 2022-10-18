@@ -7,15 +7,30 @@ export class Jwt{
   verified;
 
   toAsign (login, date) {
+
     return jwt.sign({ login: login, date: date}, this.keySecret )
   }
 
   verifyToken (token) {
     
-    this.verified = jwt.verify(token, this.keySecret);
+    try {
 
-    console.log("Valor do resultado JWT: ", this.verified);
+      this.verified = jwt.verify(token, this.keySecret);
+
+      console.log("Valor do resultado JWT: ", this.verified);
+      
+      return this.verified;
+      
+    } catch (error) {
+
+      console.log("Error : ".error)
+      return false;
+    } 
     
-    return this.verified
+
+
+    
+
+
   }
 }
