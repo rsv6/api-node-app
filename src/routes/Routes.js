@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { DispositivoController } from "../controllers/dispositivoController.js";
+import { DispositivoController } from "../controllers/dispositivoController";
 import { verificaLogin } from "../services/middles/verificaLogin.js";
 import { verificaToken } from "../services/middles/verificaToken.js";
 import { UsuarioController } from "../controllers/UsuarioController.js";
